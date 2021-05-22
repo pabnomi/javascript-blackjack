@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blackjack !</title>
+    <link rel='stylesheet' type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><div class="text-header"><h1>JavaScript Blackjack</h1></div></header>
+      <section>
+        <div class="playground">
+          <div id="dealer" class="player-box">
+            <div class="player-info">
+              <div class="player-title"><h1>Dealer - </h1></div><div class="dealer-points"><h1>0</h1></div>
+            </div>
+            <div class="dealer-cards-container">
+              <div class="cards">
+                <ul class="table">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="result-box"><h1></h1></div>
+          <div id="human" class="player-box active">
+            <div class="player-info">
+              <div class="player-title"><h1>Player - </h1></div><div class="human-points"><h1>0</h1></div>
+            </div>
+            <div class="human-cards-container">
+              <div class="cards">
+                <ul class="table">
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="play-buttons">
+            <button type="button" id="hit-btn" class="btn" onclick="blackjack.hit(blackjack.currentPlayer)">Hit</button>
+            <button type="button" id="stay-btn" class="btn" onclick="blackjack.stay(blackjack.currentPlayer)">Stay</button>
+            <button type="button" id="start-btn" class="btn" onclick="blackjack.startGame()">Start</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src='jquery-3.6.0.js'></script>
+    <script src='blackjack.js'></script>
+  </body>
+</html>
