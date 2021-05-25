@@ -38,8 +38,9 @@ class Player {
                 if (card.face === 'Ace') {
                     isSoftHand = true
                     if (isSoftHand && total < 11) {
-                        total += 11;
+                        total += card.value
                     } else if (isSoftHand) {
+                        // When Ace is present but the total value of the hand is greater than 11, the Ace value is 1
                         total += 1;
                     }
                 } else {
