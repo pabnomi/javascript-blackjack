@@ -108,7 +108,7 @@ h1 {
 .btn {
     display: inline-block;
     width: 100px;
-    border-width: 0px;
+    border: 0.1em solid #000;
     background-color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
@@ -121,7 +121,7 @@ h1 {
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
-    box-shadow: 5px 10px #999;
+    box-shadow: 3px 5px #999;
 
 }
 
