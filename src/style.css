@@ -149,7 +149,7 @@ h1 {
     width: 3.3em;
     height: 4.6em;
     border: 0.2em solid #000;
-    border-style: dashed;
+    border-style: solid;
     border-radius: .3em;
     padding: .25em;
     margin: 0 .5em .5em 0;
