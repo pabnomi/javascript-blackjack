@@ -1,7 +1,7 @@
 name: Deploy game to Pages
 on:
   push:
-    branches: ["main", "ci"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   deploy:
     environment:
-      name: blackjack
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
